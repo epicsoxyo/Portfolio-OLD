@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d861e2b5b1e494c86fc997bd926f47, type: 3}
+  m_Name: AboutMe
+  m_EditorClassIdentifier: 
+  dialogue:
+  - I didn't always want to be a game developer, you know. I actually did my undergraduate
+    in physics at the University of Manchester!
+  - I learned a lot from it; during this time, I became good at mathematics, problem
+    solving, C++, and Python. It also certainly taught me how to work well in a high-stress
+    environment!
+  - However, coming to the end of my degree, most of my friends were going into either
+    finance or research. Great career options, but they didn't quite feel right for
+    me.
+  - It was then I made my first game - a flappy bird clone - with my partner. It
+    was at this point I remembered how much I used to love making games in level
+    editors when I was younger.
+  - I then saw a master's degree opportunity pop up for videogames development at
+    Manchester Metropolitain University - I knew I had to take it!
+  - I've come a long way since then, joining countless game jams and just overall
+    learning as much as I can.
+  - I absolutely love developing games - I wouldn't be exaggerating to say I've found
+    my true calling in life!
+  - Thanks for listening! If you want to hear about the awards I've received, I'd
+    be happy to chat some more :)

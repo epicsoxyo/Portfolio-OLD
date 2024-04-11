@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d861e2b5b1e494c86fc997bd926f47, type: 3}
+  m_Name: Awards
+  m_EditorClassIdentifier: 
+  dialogue:
+  - You want to hear about Game a Week, hm? Sure, why not!
+  - Game a Week is a fortnightly game jam held by my university. Every fortnight,
+    we're given one week to make a game using the theme we're given.
+  - It's still ongoing, but so far I've received an award every week for my games
+    - which I'm really proud to achieve, considering there are around 80 applicants
+    each week!
+  - My first award, for "Best Presentation", was awarded for the creative gameplay
+    transition sequence in my game FeatherForce, the theme for this being "The Avian
+    Games".
+  - I used a combination of split-screen, lerped UI movement, particle effects and
+    3D animations to achieve a unique transition into gameplay for this game.
+  - Next, I received an award for "Best Use of Theme" in "The Endless Void" theme.
+    For this, I made a horror game in which you play as my dog, who is terrified
+    of vaccuum cleaners!
+  - The game plays similarly to Slenderman; you must collect 6 toys and take them
+    back to your dog bed. Meanwhile, you are chased by an intelligent vaccuum cleaner.
+    Scary!
+  - My most recent achievement, the "Alumni Award", is one given to the game voted
+    most popular among course alumni. The theme for this was "The Wizard's Factory".
+  - While not too dense in gameplay, I utilised my game Chronomagicka to try out
+    some of the programming patterns I had learnt in my free time. As a result, the
+    game was deemed mechanically impressive by my lecturers :)
