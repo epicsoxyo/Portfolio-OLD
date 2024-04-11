@@ -65,13 +65,11 @@ public class Controller : MonoBehaviour
 
         if(isInteracting && (input != Vector2.zero || Input.GetButtonDown("Cancel")))
         {
-            StopAllCoroutines();
             StartCoroutine("EndInteraction");
         }
 
         if(!isInteracting && Input.GetButtonDown("Interact"))
         {
-            StopAllCoroutines();
             StartCoroutine("Interact");
         }
 
@@ -155,6 +153,9 @@ public class Controller : MonoBehaviour
     private IEnumerator Interact()
     {
 
+        StopCoroutine("EndInteraction");
+        isInteracting = true;
+
         if(currentInteractable == null) yield break;
         currentInteractable.TriggerInteraction();
 
@@ -197,8 +198,6 @@ public class Controller : MonoBehaviour
 
         }
 
-        isInteracting = true;
-
     }
 
 
@@ -206,6 +205,8 @@ public class Controller : MonoBehaviour
     private IEnumerator EndInteraction()
     {
 
+        StopCoroutine("Interact");
+        isInteracting = false;
 
         if(currentInteractable == null) yield break;
         currentInteractable.TriggerEndInteraction();
@@ -246,8 +247,6 @@ public class Controller : MonoBehaviour
             yield return null;
 
         }
-
-        isInteracting = false;
 
     }
 
