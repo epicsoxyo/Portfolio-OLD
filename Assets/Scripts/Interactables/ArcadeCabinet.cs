@@ -58,8 +58,8 @@ public class ArcadeCabinet : Interactable
         infoText += "Time taken: " + gameInfoAsset.timeTaken + "\n";
         infoText += "Contribution: " + gameInfoAsset.contribution;
 
-        TextMeshProUGUI infoTextElement = infoPanel.GetComponentInChildren<TextMeshProUGUI>();
-        infoTextElement.text = infoText;
+        TextMeshProUGUI infoTextElement = infoPanel.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        infoTextElement.SetText(infoText);
 
     }
 

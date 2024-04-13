@@ -2711,6 +2711,10 @@ PrefabInstance:
       value: https://github.com/epicsoxyo/FeatherForce
       objectReference: {fileID: 0}
     - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
+      propertyPath: gameInfoAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cf23275163a3b94e86d33e6d97172f0, type: 2}
+    - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
       propertyPath: infoTextAsset
       value: 
       objectReference: {fileID: 11400000, guid: 7cf23275163a3b94e86d33e6d97172f0, type: 2}
@@ -3441,6 +3445,10 @@ PrefabInstance:
       value: https://github.com/epicsoxyo/TheVacuum
       objectReference: {fileID: 0}
     - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
+      propertyPath: gameInfoAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 170d99a1b1487b643a3b3e3ab762919a, type: 2}
+    - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
       propertyPath: infoTextAsset
       value: 
       objectReference: {fileID: 11400000, guid: 170d99a1b1487b643a3b3e3ab762919a, type: 2}
@@ -3703,6 +3711,10 @@ PrefabInstance:
       propertyPath: githubURL
       value: https://github.com/epicsoxyo/KillerImpulse
       objectReference: {fileID: 0}
+    - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
+      propertyPath: gameInfoAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b64a03164c91894b8388631eaf0d9f4, type: 2}
     - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
       propertyPath: infoTextAsset
       value: 
@@ -4989,6 +5001,10 @@ PrefabInstance:
       value: https://github.com/epicsoxyo/GARDEN_EXE
       objectReference: {fileID: 0}
     - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
+      propertyPath: gameInfoAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c2962c3e7686512488ff05da3e4fb469, type: 2}
+    - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
       propertyPath: infoTextAsset
       value: 
       objectReference: {fileID: 11400000, guid: c2962c3e7686512488ff05da3e4fb469, type: 2}
@@ -5297,6 +5313,10 @@ PrefabInstance:
       propertyPath: githubURL
       value: https://github.com/ManMetGames/Spirit-Showdown
       objectReference: {fileID: 0}
+    - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
+      propertyPath: gameInfoAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e6cdc39ae0dfa04a86bd11400e244f7, type: 2}
     - target: {fileID: 1934211625783657784, guid: caf18009a762c3d428ab1aeac85c5db7, type: 3}
       propertyPath: infoTextAsset
       value: 
