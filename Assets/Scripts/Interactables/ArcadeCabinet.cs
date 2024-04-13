@@ -55,8 +55,8 @@ public class ArcadeCabinet : Interactable
         infoText += "Languages used: " + gameInfoAsset.languagesUsed + "\n";
         infoText += "Software used: " + gameInfoAsset.softwareUsed + "\n";
         infoText += "Genre: " + gameInfoAsset.genre + "\n";
-        infoText += "Time taken: " + gameInfoAsset.timeTaken + "\n";
-        infoText += "Contribution: " + gameInfoAsset.contribution;
+        infoText += "Time taken: " + gameInfoAsset.timeTaken + "\n\n";
+        infoText += "Contribution:\n" + gameInfoAsset.contribution;
 
         TextMeshProUGUI infoTextElement = infoPanel.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         infoTextElement.SetText(infoText);
