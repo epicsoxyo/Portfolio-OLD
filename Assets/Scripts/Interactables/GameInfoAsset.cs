@@ -2,10 +2,15 @@ using UnityEngine;
 
 
 
-[CreateAssetMenu(fileName = "InfoTextAsset", menuName = "InfoTextAsset", order = 0)]
-public class InfoTextAsset : ScriptableObject
+[CreateAssetMenu(fileName = "GameInfoAsset", menuName = "GameInfoAsset", order = 0)]
+public class GameInfoAsset : ScriptableObject
 {
 
+    [Header("Links")]
+    public string gameURL;
+    public string githubURL;
+
+    [Header("Info Text")]
     public string projectTitle;
     public string languagesUsed;
     public string softwareUsed;

@@ -7,9 +7,7 @@ using TMPro;
 public class ArcadeCabinet : Interactable
 {
 
-    [SerializeField] private string gameURL;
-    [SerializeField] private string githubURL;
-    [SerializeField] private InfoTextAsset infoTextAsset;
+    [SerializeField] private GameInfoAsset gameInfoAsset;
 
     private Button startButton;
     private Button githubButton;
@@ -34,8 +32,8 @@ public class ArcadeCabinet : Interactable
 
         SetInfoText();
 
-        startButton.onClick.AddListener(() => Application.OpenURL(gameURL));
-        githubButton.onClick.AddListener(() => Application.OpenURL(githubURL));
+        startButton.onClick.AddListener(() => Application.OpenURL(gameInfoAsset.gameURL));
+        githubButton.onClick.AddListener(() => Application.OpenURL(gameInfoAsset.githubURL));
         infoButton.onClick.AddListener(() => infoPanel.SetActive(true));
         closePanelButton.onClick.AddListener(() => infoPanel.SetActive(false));
 
@@ -53,12 +51,12 @@ public class ArcadeCabinet : Interactable
 
         string infoText = "";
 
-        infoText += "Name: " + infoTextAsset.projectTitle + "\n";
-        infoText += "Languages used: " + infoTextAsset.languagesUsed + "\n";
-        infoText += "Software used: " + infoTextAsset.softwareUsed + "\n";
-        infoText += "Genre: " + infoTextAsset.genre + "\n";
-        infoText += "Time taken: " + infoTextAsset.timeTaken + "\n";
-        infoText += "Contribution: " + infoTextAsset.contribution;
+        infoText += "Name: " + gameInfoAsset.projectTitle + "\n";
+        infoText += "Languages used: " + gameInfoAsset.languagesUsed + "\n";
+        infoText += "Software used: " + gameInfoAsset.softwareUsed + "\n";
+        infoText += "Genre: " + gameInfoAsset.genre + "\n";
+        infoText += "Time taken: " + gameInfoAsset.timeTaken + "\n";
+        infoText += "Contribution: " + gameInfoAsset.contribution;
 
         TextMeshProUGUI infoTextElement = infoPanel.GetComponentInChildren<TextMeshProUGUI>();
         infoTextElement.text = infoText;

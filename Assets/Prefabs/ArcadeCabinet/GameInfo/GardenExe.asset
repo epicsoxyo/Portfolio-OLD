@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6d495a498562b4fbf037ad400491f2, type: 3}
   m_Name: GardenExe
   m_EditorClassIdentifier: 
+  gameURL: https://soxyo.itch.io/garden-exe
+  githubURL: https://github.com/epicsoxyo/GARDEN_EXE
   projectTitle: GARDEN_EXE
-  languagesUsed: 
-  softwareUsed: 
-  genre: 
-  timeTaken: 
+  languagesUsed: C#
+  softwareUsed: Unity, Clip Studio Paint
+  genre: Arcade, Vaporwave
+  timeTaken: 3 days
   contribution: 
