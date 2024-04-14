@@ -16,7 +16,22 @@ MonoBehaviour:
   githubURL: https://github.com/epicsoxyo/TheVacuum
   projectTitle: The Vacuum
   languagesUsed: C#
-  softwareUsed: Unity
+  softwareUsed: Unity3D
   genre: Horror
   timeTaken: 3 days
-  contribution: 
+  contribution: 'This was my second submission to Game a Week, a fortnightly week-long
+    game jam held by my university. These are required to be solo projects with the
+    focus being on the code; as such, I am not the creator of any of the visual assets
+    in-game, but all the code was written by me.
+
+
+    The theme for this project
+    was "The Endless Void". Inspired by my visit to see my family over the weekend,
+    I made a Slenderman-like game where you play as my dog, Jackson, hiding away
+    from his biggest nightmare... the vacuum cleaner!
+
+
+    I would say this is one
+    of my more successful projects, and I learned a lot from it; I managed to create
+    an effective enemy AI controller, as well as an animation blend space that reacts
+    to how nearby the player is.'

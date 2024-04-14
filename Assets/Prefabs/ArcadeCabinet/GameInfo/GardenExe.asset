@@ -16,7 +16,27 @@ MonoBehaviour:
   githubURL: https://github.com/epicsoxyo/GARDEN_EXE
   projectTitle: GARDEN_EXE
   languagesUsed: C#
-  softwareUsed: Unity, Clip Studio Paint
+  softwareUsed: Unity2D, Clip Studio Paint, Notion
   genre: Arcade, Vaporwave
   timeTaken: 3 days
-  contribution: 
+  contribution: 'This was my submission to Mini Jam 146, a 72-hour game jam hosted
+    on itch.io. It was also my very first submission to a game jam, so I ended up
+    massively overplanning for this, finishing a day ahead of time!
+
+
+    The theme
+    for this was "Windows", which I interpreted through simulating a Win95 operating
+    system with a Vaporwave twist. I''ve included a small easter egg where if you
+    click the Start button, the menu opens up to show the credits for the game!
+
+
+    For
+    this submission, I challenged myself to make all of the assets from scratch,
+    which I spent a day prior to the jam doing. I then planned how I was going to
+    make the game using a Kanban board on Notion. After completing the game, I was
+    voted 6th place out of 59 entries :)
+
+
+    I would say the thing I learned most
+    from this experience was how to plan effectively. I also gained a lot of experience
+    in using Unity2D and the UI system.'

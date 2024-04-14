@@ -16,11 +16,22 @@ MonoBehaviour:
   githubURL: https://github.com/epicsoxyo/FeatherForce
   projectTitle: FeatherForce
   languagesUsed: C#
-  softwareUsed: Unity
+  softwareUsed: Unity3D
   genre: Arcade
   timeTaken: 3 days
-  contribution: This is my first submission to Game a Week, a fortnightly week-long
+  contribution: 'This was my first submission to Game a Week, a fortnightly week-long
     game jam held by my university. These are required to be solo projects with the
     focus being on the code; as such, I am not the creator of any of the visual assets
-    in-game. The theme for this project was "The Avian Games", with the randomly-selected
-    modifyer "Monochrome".
+    in-game, but all the code was written by me.
+
+
+    The theme for this project
+    was "The Avian Games". I decided to go with a chicken playing shotput with an
+    egg since I thought it would be funny :)
+
+
+    All in all, I love how this turned
+    out. I learned a lot about cameras, coroutines, inputs, and animations. If I
+    were to make this game again, I would probably calculate the shake speed using
+    a different equation as some people on my course pointed out you can actually
+    cheat by shaking the mouse in the first frame only, causing a zero-division error.'

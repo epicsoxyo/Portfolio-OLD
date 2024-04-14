@@ -19,4 +19,19 @@ MonoBehaviour:
   softwareUsed: Unreal Engine 5, HypeRate
   genre: Horror, Arcade, Heart Rate Monitor
   timeTaken: 3 days
-  contribution: 
+  contribution: 'This was my fourth submission to Game a Week, a fortnightly week-long
+    game jam held by my university. These are required to be solo projects with the
+    focus being on the code; as such, I am not the creator of any of the visual assets
+    in-game, but all the code was written by me.
+
+
+    The theme for this project
+    was "The Nightmare Heart", which I interpreted by making a horror game that connects
+    to your real-world heart rate using the HypeRate API.
+
+
+    I connected to the
+    API using the Unreal Engine 4 HypeRate plugin. it wasn''t super well-documented
+    or maintained, and I had to make a few tweaks to the code to make it meet my
+    needs (and my engine version!) However, I gained a lot of invaluable experience
+    in using APIs and overall use of Unreal Engine from it.'

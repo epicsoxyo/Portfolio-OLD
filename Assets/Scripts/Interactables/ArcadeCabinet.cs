@@ -20,7 +20,7 @@ public class ArcadeCabinet : Interactable
 
     protected override void Start()
     {
-        
+
         base.Start();
 
         Transform buttonsCanvas = transform.GetComponentInChildren<Canvas>().transform;
@@ -58,7 +58,7 @@ public class ArcadeCabinet : Interactable
         infoText += "Time taken: " + gameInfoAsset.timeTaken + "\n\n";
         infoText += "Contribution:\n" + gameInfoAsset.contribution;
 
-        TextMeshProUGUI infoTextElement = infoPanel.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI infoTextElement = infoPanel.GetComponentInChildren<ScrollRect>().GetComponentInChildren<TextMeshProUGUI>();
         infoTextElement.SetText(infoText);
 
     }

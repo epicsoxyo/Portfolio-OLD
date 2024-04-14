@@ -18,7 +18,7 @@ public class GameInfoAsset : ScriptableObject
 
     public string timeTaken;
 
-    [TextArea] [Tooltip("Remember to stick to the three paragraphs rule:\n- what is this and why did I do it\n- what was my contribution and how did I achieve it\n- how do I feel about it and what did I learn")]
+    [TextArea(15, 50)] [Tooltip("Remember to stick to the three paragraphs rule:\n- what is this and why did I do it\n- what was my contribution and how did I achieve it\n- how do I feel about it and what did I learn")]
     public string contribution;
 
     /*

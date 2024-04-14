@@ -12,11 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6d495a498562b4fbf037ad400491f2, type: 3}
   m_Name: SpiritShowdown
   m_EditorClassIdentifier: 
-  gameURL: https://soxyo.itch.io/spirit-showdown
+  gameURL: https://twitter.com/PhantomForgeDev
   githubURL: https://github.com/ManMetGames/Spirit-Showdown
   projectTitle: Spirit Showdown
   languagesUsed: C#
-  softwareUsed: Unity
+  softwareUsed: Unity3D, Unity Netcode, GitHub, Jira
   genre: Online Multiplayer, Party, Team Battle
   timeTaken: Ongoing
-  contribution: 
+  contribution: 'This is an ongoing project that was initially part of a simulated
+    game studio held as one of my modules at university, but which I plan to continue
+    for Tranzfuser -- a government-funded scheme that aids graduates in starting
+    their own game studio. The game itself is an online multiplayer game in which
+    there are two teams, priests and ghosts, each with their own unique abilities.
+    The aim of the game is to kill/exorcise all members of the opposing team or,
+    alternatively, bless all rooms on the map as a priest.
+
+
+    For this project,
+    we were given the opportunity to pitch a game idea to a "CEO" (our lecturers),
+    and -- if successful -- lead a team into making that game idea a reality across
+    one semester. I have since been acting as team leader, and have learned many
+    soft skills from this: presentational skills, leadership, communication, conflict
+    resolution, version control, and scrum development.
+
+
+    In terms of development,
+    I have complete ownership over the player controllers, utilising the Control
+    design pattern to easily switch between player types (ghost, priest, spectator)
+    and add actions to each. I have also been transferred ownership of the Netcode
+    from someone who has left the university, for which I have learned a great deal
+    both about working on someone else''s code and about network connectivity in
+    games.'
