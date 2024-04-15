@@ -3940,6 +3940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showreelFileName: Showreel.mp4
+  showreelYoutubeURL: https://youtu.be/J4ayBmziYFc
 --- !u!65 &1430733695
 BoxCollider:
   m_ObjectHideFlags: 0
