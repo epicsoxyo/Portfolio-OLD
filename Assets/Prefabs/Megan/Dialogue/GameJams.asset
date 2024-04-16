@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d861e2b5b1e494c86fc997bd926f47, type: 3}
+  m_Name: GameJams
+  m_EditorClassIdentifier: 
+  dialogueName: Game Jams
+  dialogue:
+  - I've joined quite a few game jams here and there... probably my two most notable
+    ones are Mini Jam 146, and the jam I hosted for my coursemates!
+  - Mini Jam is a 72-hour game jam hosted on itch.io. The theme is announced in advance,
+    but there's a modifier that's announced the day of. This gives you time to make
+    the assets, but not the game!
+  - For the 146th jam, the theme was "Windows" with the modifier "nothing is permanent".
+    Since I'm a huge fan of the vaporwave aesthetic, I decided to theme my game based
+    around this!
+  - The aim of the game is to play a cute and   a e s t h e t i c   garden sim for
+    as long as possible on your Win95 OS... or at least until all the viruses brick
+    your PC and make you lose all your progress!
+  - Then of course you have the jam I hosted myself. Inspired by the Secret Santa
+    jam hosted on itch each year, I wanted to make my own with my coursemates!
+  - To do this, I set up a Discord server with a secret santa bot. Then, everyone
+    had to anonymously write letters to their santas, and make the games requested
+    by their giftees.
+  - My giftee requested an aim trainer, which I made using Unreal Engine 5. I personalised
+    it with their name, and added a small bar area since they love making cocktails
+    in their free time :)
+  - Thanks for listening!

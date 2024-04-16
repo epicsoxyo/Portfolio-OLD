@@ -6,6 +6,8 @@ using UnityEngine;
 public class DialogueAsset : ScriptableObject
 {
 
+    public string dialogueName;
+
     [TextArea]
     public string[] dialogue;
 

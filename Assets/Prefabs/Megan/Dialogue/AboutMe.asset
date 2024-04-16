@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d861e2b5b1e494c86fc997bd926f47, type: 3}
   m_Name: AboutMe
   m_EditorClassIdentifier: 
+  dialogueName: About me
   dialogue:
   - I didn't always want to be a game developer, you know. I actually did my undergraduate
     in physics at the University of Manchester!
@@ -30,5 +31,4 @@ MonoBehaviour:
     learning as much as I can.
   - I absolutely love developing games - I wouldn't be exaggerating to say I've found
     my true calling in life!
-  - Thanks for listening! If you want to hear about the awards I've received, I'd
-    be happy to chat some more :)
+  - Thanks for listening! :)

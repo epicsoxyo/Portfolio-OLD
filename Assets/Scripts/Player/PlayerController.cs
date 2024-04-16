@@ -17,10 +17,14 @@ public class Controller : MonoBehaviour
     private Interactable currentInteractable;
     private bool isInteracting = false;
 
+    private PlayerUI playerUI;
+
     private SpriteRenderer playerSprite;
 
     private Transform playerCameraTransform;
     private Transform playerCameraDefaultTransform;
+    private float playerCameraDefaultHeight;
+    private float playerCameraDefaultDepth;
     [SerializeField] private float cameraZoomInLerpTime;
     [SerializeField] private float cameraZoomOutLerpTime;
 
@@ -30,26 +34,24 @@ public class Controller : MonoBehaviour
     private void Start()
     {
 
-        DialoguePanel dialoguePanel = FindFirstObjectByType<DialoguePanel>();
-        dialoguePanel.dialogueEnd.AddListener(() => StartCoroutine("EndInteraction"));
+        DialogueUI DialogueUI = FindFirstObjectByType<DialogueUI>();
+        DialogueUI.dialogueEnd.AddListener(() => StartCoroutine("EndInteraction"));
 
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
 
         anim = GetComponentInChildren<Animator>();
 
+        playerUI = GetComponentInChildren<PlayerUI>();
+
         playerSprite = GetComponentInChildren<SpriteRenderer>();
 
-        playerCameraTransform = GetComponentInChildren<Camera>().transform;
+        playerCameraTransform = Camera.main.transform;
 
-        foreach(Transform child in GetComponentsInChildren<Transform>())
-        {
-            if(child.CompareTag("CameraPoint"))
-            {
-                playerCameraDefaultTransform = child;
-                break;
-            }
-        }
+        playerCameraDefaultTransform = GameObject.FindWithTag("PlayerCameraPoint").transform;
+        playerCameraDefaultHeight = playerCameraDefaultTransform.position.y;
+
+        playerCameraTransform.rotation = playerCameraDefaultTransform.rotation;
 
     }
 
@@ -61,17 +63,29 @@ public class Controller : MonoBehaviour
 
         Vector2 input = GetMovementInput();
 
-        Move(input);
-
-        if(isInteracting && (input != Vector2.zero || Input.GetButtonDown("Cancel")))
+        if(isInteracting && (input != Vector2.zero || Input.GetButtonDown("Interact")))
         {
             StartCoroutine("EndInteraction");
+            return;
         }
 
         if(!isInteracting && Input.GetButtonDown("Interact"))
         {
             StartCoroutine("Interact");
+            return;
         }
+
+        if(isInteracting) return;
+
+        Move(input);
+
+        playerCameraDefaultTransform.position = new Vector3
+        (
+            playerCameraDefaultTransform.position.x,
+            playerCameraDefaultHeight,
+            playerCameraDefaultTransform.position.z
+        );
+        playerCameraTransform.position = playerCameraDefaultTransform.position;
 
     }
 
@@ -150,14 +164,18 @@ public class Controller : MonoBehaviour
 
 
 
+    // runs animation for interacting
     private IEnumerator Interact()
     {
 
         StopCoroutine("EndInteraction");
-        isInteracting = true;
 
         if(currentInteractable == null) yield break;
         currentInteractable.TriggerInteraction();
+
+        isInteracting = true;
+
+        playerUI.HideControls();
 
         float timeElapsed = 0f;
         Transform newTransform = currentInteractable.CameraPointTransform;
@@ -202,15 +220,18 @@ public class Controller : MonoBehaviour
 
 
 
+    // runs animation for end of interaction
     private IEnumerator EndInteraction()
     {
 
         StopCoroutine("Interact");
-        isInteracting = false;
 
         if(currentInteractable == null) yield break;
         currentInteractable.TriggerEndInteraction();
 
+        isInteracting = false;
+
+        playerUI.ShowControls();
 
         float timeElapsed = 0f;
 

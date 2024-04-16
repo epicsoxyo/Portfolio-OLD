@@ -27,7 +27,7 @@ public class BusinessCard : MonoBehaviour
         discordButton.onClick.AddListener(() => Application.OpenURL("https://discordapp.com/users/294190647605460994"));
         twitterButton.onClick.AddListener(() => Application.OpenURL("https://twitter.com/soxxxyo"));
         emailButton.onClick.AddListener(() =>  Application.OpenURL("mailto:meganhamiltonmills@gmail.com"));
-        cvButton.onClick.AddListener(() => Application.OpenURL("https://acrobat.adobe.com/id/urn:aaid:sc:EU:bba437b1-44c6-4ec7-b937-bf25d7f1e53c"));
+        cvButton.onClick.AddListener(() => Application.OpenURL("https://acrobat.adobe.com/id/urn:aaid:sc:EU:f157b9b3-c2b9-495e-b070-3157c50cfc91"));
 
     }
 

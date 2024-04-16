@@ -2,20 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
+[RequireComponent(typeof(Dialogue))]
 public class Megan : Interactable
 {
 
     private Animator anim;
 
-    [SerializeField] private DialogueAsset[] dialogues;
-    private DialoguePanel dialoguePanel;
-    private int dialogueIndex = 0;
+    private Dialogue dialogue;
+
+    private bool hasInteracted = false;
 
 
 
     private void Awake()
     {
-        
+
         anim = GetComponent<Animator>();
 
     }
@@ -27,7 +31,8 @@ public class Megan : Interactable
 
         base.Start();
 
-        dialoguePanel = GameObject.FindFirstObjectByType<DialoguePanel>();
+        dialogue = GetComponent<Dialogue>();
+
 
     }
 
@@ -38,10 +43,7 @@ public class Megan : Interactable
         
         anim.SetTrigger("Interact");
 
-        dialoguePanel.OpenDialogue(dialogues[dialogueIndex]);
-
-        dialogueIndex++;
-        if(dialogueIndex == dialogues.Length) dialogueIndex = 0;
+        dialogue.OpenDialogueWithMenu();
 
     }
 
@@ -52,9 +54,20 @@ public class Megan : Interactable
 
         anim.SetTrigger("Idle");
 
-        dialoguePanel.CloseDialogue();
+        dialogue.EndDialogue();
+
+        if(dialogue.CurrentIndex == 0) return;
+
+        PlayerUI playerUI = GameObject.FindWithTag("PlayerUI").GetComponent<PlayerUI>();
+
+        if(playerUI)
+        {
+            playerUI.GiveBusinessCard();
+            return;
+        }
+
+        Debug.LogError("Could not find PlayerUI!");
 
     }
-
 
 }

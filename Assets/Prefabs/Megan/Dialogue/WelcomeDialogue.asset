@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d861e2b5b1e494c86fc997bd926f47, type: 3}
   m_Name: WelcomeDialogue
   m_EditorClassIdentifier: 
+  dialogueName: Welcome
   dialogue:
-  - Hi, I'm Megan! Welcome to my portfoli- uh, arcade!
-  - If you stick around to chat, I'll tell you a bit about myself :)
-  - In the meantime, feel free to take a look around. I'm a bit busy right now so
-    if you need anything else feel free to send a message and I'll get back to you
-    as soon as I can!
+  - Welcome to the Arcade! We have plenty of games for you to take a look at, just
+    interact with the arcade cabinets to your right.
+  - Each cabinet has a "Start" button to play the game, an "Info" button to read
+    a bit about how I made them, and a "GitHub" button if you're interested in looking
+    at the code.
+  - There's also a screening of my showreel down the other end of the arcade, go
+    take a look!
+  - I'm actually just a holographic stand-in for Megan, so... if you need anything
+    else feel free to send a message and I'll get back to you as soon as I can!
   - I'll leave my business card there for you. Have fun~
