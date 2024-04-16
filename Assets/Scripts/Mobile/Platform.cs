@@ -1,6 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
+public class WebGLHandler : MonoBehaviour
+{
+  [DllImport("__Internal")]
+  public static extern bool IsMobileBrowser();
+}
 
 
 
@@ -12,8 +18,8 @@ public class Platform
             return false;
         #elif UNITY_WEBGL
             return WebGLHandler.IsMobileBrowser();
+        #else
+            return false;
         #endif
-        
-        return false;
     }
 }
