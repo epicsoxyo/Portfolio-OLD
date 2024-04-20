@@ -27,6 +27,7 @@ public class PlayerUI : MonoBehaviour
 
     private void Start()
     {
+        if(Platform.IsMobileBrowser()) Destroy(gameObject);
 
         businessCardButton = businessCardUI.transform.GetChild(0).GetComponent<Button>();
         businessCard = businessCardUI.transform.GetChild(1).gameObject;
